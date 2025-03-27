@@ -1,0 +1,337 @@
+import Link from "next/link"
+import Image from "next/image"
+import { ChevronRight, BookOpen, Award, Users, BookMarked } from "lucide-react"
+
+export default function Home() {
+  return (
+    <div className="flex flex-col min-h-screen">
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container flex h-16 items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Link href="/#">
+            <Image 
+              src="/fulllogo-removebg.png" 
+              alt="Millennium Enterprises Logo" 
+              width={120} 
+              height={40} 
+              className="object-contain h-20 w-auto"
+              
+            />
+            </Link>
+          </div>
+          <nav className="hidden md:flex gap-6">
+            <Link href="#" className="text-sm font-medium transition-colors hover:text-primary">
+              Home
+            </Link>
+            <Link href="/books" className="text-sm font-medium transition-colors hover:text-primary">
+              Books
+            </Link>
+            <Link href="/subjects" className="text-sm font-medium transition-colors hover:text-primary">
+              Subjects
+            </Link>
+            <Link href="/publishers" className="text-sm font-medium transition-colors hover:text-primary">
+            Publishers
+            </Link>
+            <Link href="/proposal" className="text-sm font-medium transition-colors hover:text-primary">
+            Book Proposal
+            </Link>
+            <Link href="/about" className="text-sm font-medium transition-colors hover:text-primary">
+              AboutUs
+            </Link>
+          </nav>
+          <div className="flex items-center gap-4">
+            <Link
+              href="#contact"
+              className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+            >
+              Enquiry
+            </Link>
+          </div>
+        </div>
+      </header>
+      <main className="flex-1">
+        <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-[url('/bookimg.jpg')] bg-cover bg-center relative">
+          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="container relative z-10 px-4 md:px-6">
+            <div className="flex flex-col items-center space-y-4 text-center text-white">
+              <div className="space-y-2 animate-fade-in">
+                <h1 className="text-3xl font-serif tracking-tight sm:text-4xl md:text-5xl lg:text-6xl/none">
+                  Discover Literary Excellence
+                </h1>
+                <p className="mx-auto max-w-[700px] text-lg/relaxed md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-light">
+                Curating Emerging Technologies in Computer Science that Innovate, Challenge, and Transform.
+                </p>
+              </div>
+              <div className="space-x-4 animate-fade-in-up">
+                <Link
+                  href="/books"
+                  className="inline-flex h-10 items-center justify-center rounded-md bg-white px-8 text-sm font-medium text-black shadow transition-colors hover:bg-white/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                >
+                  Explore Collection
+                </Link>
+                <Link
+                  href="/about"
+                  className="inline-flex h-10 items-center justify-center rounded-md border border-white bg-transparent px-8 text-sm font-medium text-white shadow-sm transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                >
+                  Our Story
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="featured" className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm font-medium">
+                  Featured Publications
+                </div>
+                <h2 className="text-3xl font-serif tracking-tight sm:text-4xl md:text-5xl">Literary Masterpieces</h2>
+                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-lg">
+                  Explore our Carefully Curated Collection of Thought-Provoking and Beautifully Crafted Literary Works.
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 md:gap-12 lg:gap-16 mt-12">
+              {[1, 2, 3].map((book) => (
+                <div
+                  key={book}
+                  className="group relative overflow-hidden rounded-lg border bg-background p-2 transition-all hover:shadow-lg"
+                >
+                    <div className="relative aspect-[2/3] overflow-hidden rounded-md">
+                    <Image
+                      src={`/book1.jpg`}
+                      alt={`Book cover ${book}`}
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      fill
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-4 text-white translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+                      <Link href="https://amzn.in/d/84kBtYf" target="_blank" className="inline-flex items-center text-sm font-medium">
+                      Read More <ChevronRight className="ml-1 h-4 w-4" />
+                      </Link>
+                    </div>
+                    </div>
+                  <div className="p-4 text-center">
+                    <h3 className="font-serif text-xl font-medium">The Luminous Path</h3>
+                    <p className="text-sm text-muted-foreground mt-1">By Eleanor Blackwood</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div className="flex justify-center mt-12">
+              <Link
+                href="/books"
+                className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+              >
+                View All Books
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section id="authors" className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm font-medium">Literary Voices</div>
+                <h2 className="text-3xl font-serif tracking-tight sm:text-4xl md:text-5xl">Meet Our Authors</h2>
+                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-lg">
+                  Discover the brilliant minds behind our exceptional literary collection.
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 md:gap-12 lg:gap-16 mt-12">
+              {[1, 2, 3].map((author) => (
+                <div key={author} className="group flex flex-col items-center text-center">
+                    <div className="relative h-40 w-40 overflow-hidden rounded-full mb-4">
+                    <Image
+                      src="/author.jpg"
+                      alt={`Author ${author}`}
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      fill
+                    />
+                    </div>
+                  <h3 className="font-serif text-xl font-medium">Jonathan Winters</h3>
+                  <p className="text-sm text-muted-foreground mt-1">Award-winning novelist</p>
+                  <p className="text-sm mt-4 max-w-xs">
+                    Known for captivating narratives that explore the depths of human experience.
+                  </p>
+                  <Link href="#" className="mt-4 inline-flex items-center text-sm font-medium text-primary">
+                    View Profile <ChevronRight className="ml-1 h-4 w-4" />
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+          <div className="container px-4 md:px-6">
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
+              <div className="flex flex-col justify-center space-y-4">
+                <div className="space-y-2">
+                  <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm font-medium">Creating Legacy</div>
+                  <h2 className="text-3xl font-serif tracking-tight sm:text-4xl md:text-5xl">
+                    A Tradition of Literary Excellence
+                  </h2>
+                  <p className="max-w-[600px] text-muted-foreground md:text-lg">
+                  Based in Mumbai and founded in 2024, Millennium Enterprises supplies diverse, high-quality printed and e-books across textbooks, references, and professional titles worldwide.
+                  </p>
+                </div>
+                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                  <Link
+                    href="/about"
+                    className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                  >
+                    Our Story
+                  </Link>
+                  <Link
+                    href="/proposal"
+                    className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+                  >
+                    Book Proposal
+                  </Link>
+                </div>
+              </div>
+              <div className="flex items-center justify-center">
+                <div className="grid grid-cols-2 gap-4 md:gap-8">
+                  <div className="flex flex-col items-center gap-2 rounded-lg border bg-background p-4 md:p-6">
+                    <BookMarked className="h-10 w-10 text-primary" />
+                    <h3 className="text-xl font-medium">50+</h3>
+                    <p className="text-sm text-center text-muted-foreground">Published Works</p>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 rounded-lg border bg-background p-4 md:p-6">
+                    <Award className="h-10 w-10 text-primary" />
+                    <h3 className="text-xl font-medium">5+</h3>
+                    <p className="text-sm text-center text-muted-foreground">Literary Awards</p>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 rounded-lg border bg-background p-4 md:p-6">
+                    <Users className="h-10 w-10 text-primary" />
+                    <h3 className="text-xl font-medium">10+</h3>
+                    <p className="text-sm text-center text-muted-foreground">Renowned Authors</p>
+                  </div>
+                  <div className="flex flex-col items-center gap-2 rounded-lg border bg-background p-4 md:p-6">
+                    <BookOpen className="h-10 w-10 text-primary" />
+                    <h3 className="text-xl font-medium">2+</h3>
+                    <p className="text-sm text-center text-muted-foreground">Years of Excellence</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm font-medium">Get in Touch</div>
+                <h2 className="text-3xl font-serif tracking-tight sm:text-4xl md:text-5xl">Connect With Us</h2>
+                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-lg">
+                  Have questions or interested in our publications? We'd love to hear from you.
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:gap-16 mt-12">
+              <div className="space-y-4">
+                <div className="space-y-2">
+                  <h3 className="text-xl font-medium">Contact Information</h3>
+                  <p className="text-muted-foreground">
+                    Our team is here to assist you with any inquiries about our publications, authors, or events.
+                  </p>
+                </div>
+                <div className="space-y-2">
+                  <p className="flex items-center">
+                    <span className="font-medium mr-2">Email:</span> millenniumbookss@gmail.com
+                  </p>
+                  <p className="flex items-center">
+                    <span className="font-medium mr-2">Phone:</span> +91-9819828188 / +91-8657502418 
+                  </p>
+                  <p className="flex items-center">
+                    <span className="font-medium mr-2">Address:</span> C/5-C, Mangaldas Wadi, Opp Temple, Naaz Cinema Compound 393, Lamington Road, Mumbai - 400 004
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="name"
+                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    >
+                      Name
+                    </label>
+                    <input
+                      id="name"
+                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <label
+                      htmlFor="email"
+                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    >
+                      Email
+                    </label>
+                    <input
+                      id="email"
+                      type="email"
+                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                      placeholder="Your email"
+                    />
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <label
+                    htmlFor="message"
+                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+                <button className="inline-flex h-10 w-full items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer className="w-full border-t bg-background py-6 md:py-8">
+        <div className="container flex flex-col items-center justify-center gap-4 px-4 md:px-6 md:flex-row md:justify-between">
+          <div className="flex items-center gap-2">
+          <Link href="/#">
+
+            <Image 
+              src="/fulllogo-removebg.png" 
+              alt="Millennium Enterprises Logo" 
+              width={150} 
+              height={40} 
+              className="object-contain"
+            />
+            </Link>
+          </div>
+          <p className="text-sm text-muted-foreground">
+            © {new Date().getFullYear()} Millennium Enterprises. All rights reserved.
+          </p>
+          <div className="flex gap-4">
+            {/* <Link href="#" className="text-sm font-medium hover:underline underline-offset-4">
+              Privacy Policy
+            </Link> */}
+            <Link href="/about" className="text-sm font-medium hover:underline underline-offset-4">
+              Terms of Service
+            </Link>
+          </div>
+        </div>
+      </footer>
+    </div>
+  )
+}
