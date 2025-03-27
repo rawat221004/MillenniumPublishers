@@ -147,7 +147,7 @@ export default function Home() {
                 <div key={author} className="group flex flex-col items-center text-center">
                     <div className="relative h-40 w-40 overflow-hidden rounded-full mb-4">
                     <Image
-                      src="/author.jpg"
+                      src="/author.JPG"
                       alt={`Author ${author}`}
                       className="object-cover transition-transform duration-300 group-hover:scale-105"
                       fill
