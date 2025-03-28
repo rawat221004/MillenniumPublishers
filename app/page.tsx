@@ -94,31 +94,71 @@ export default function Home() {
               </div>
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-3 md:gap-12 lg:gap-16 mt-12">
-              {[1, 2, 3].map((book) => (
-                <div
-                  key={book}
-                  className="group relative overflow-hidden rounded-lg border bg-background p-2 transition-all hover:shadow-lg"
-                >
-                    <div className="relative aspect-[2/3] overflow-hidden rounded-md">
-                    <Image
-                      src={`/book1.jpg`}
-                      alt={`Book cover ${book}`}
-                      className="object-cover transition-transform duration-300 group-hover:scale-105"
-                      fill
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
-                    <div className="absolute bottom-0 left-0 right-0 p-4 text-white translate-y-full transition-transform duration-300 group-hover:translate-y-0">
-                      <Link href="https://amzn.in/d/84kBtYf" target="_blank" className="inline-flex items-center text-sm font-medium">
-                      Read More <ChevronRight className="ml-1 h-4 w-4" />
-                      </Link>
-                    </div>
-                    </div>
-                  <div className="p-4 text-center">
-                    <h3 className="font-serif text-xl font-medium">The Luminous Path</h3>
-                    <p className="text-sm text-muted-foreground mt-1">By Eleanor Blackwood</p>
-                  </div>
+              {/* Book 1 */}
+              <div className="group relative overflow-hidden rounded-lg border bg-background p-2 transition-all hover:shadow-lg">
+              <div className="relative aspect-[2/3] overflow-hidden rounded-md">
+                <Image
+                src="/book1.png"
+                alt="Software Architecture book cover"
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                fill
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+                <Link href="/books" target="_blank" className="inline-flex items-center text-sm font-medium">
+                  Read More <ChevronRight className="ml-1 h-4 w-4" />
+                </Link>
                 </div>
-              ))}
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="font-serif text-xl font-medium">L&T Body Of Knowledge - Case Studies</h3>
+                <p className="text-sm text-muted-foreground mt-1">By Millennium Enterprises</p>
+              </div>
+              </div>
+
+              {/* Book 2 */}
+              <div className="group relative overflow-hidden rounded-lg border bg-background p-2 transition-all hover:shadow-lg">
+              <div className="relative aspect-[2/3] overflow-hidden rounded-md">
+                <Image
+                src="/book2.png"
+                alt="Machine Learning book cover"
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                fill
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+                <Link href="/books" target="_blank" className="inline-flex items-center text-sm font-medium">
+                  Read More <ChevronRight className="ml-1 h-4 w-4" />
+                </Link>
+                </div>
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="font-serif text-xl font-medium">INTELLIGENT FORENSICS</h3>
+                <p className="text-sm text-muted-foreground mt-1">By Dr. Nilakshi Jain & Maj. Vineet Kumar</p>
+              </div>
+              </div>
+
+              {/* Book 3 */}
+              <div className="group relative overflow-hidden rounded-lg border bg-background p-2 transition-all hover:shadow-lg">
+              <div className="relative aspect-[2/3] overflow-hidden rounded-md">
+                <Image
+                src="/book3.png"
+                alt="Cloud Computing book cover"
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                fill
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity group-hover:opacity-100"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-4 text-white translate-y-full transition-transform duration-300 group-hover:translate-y-0">
+                <Link href="/books" target="_blank" className="inline-flex items-center text-sm font-medium">
+                  Read More <ChevronRight className="ml-1 h-4 w-4" />
+                </Link>
+                </div>
+              </div>
+              <div className="p-4 text-center">
+                <h3 className="font-serif text-xl font-medium">Project Management for Profitable Growth</h3>
+                <p className="text-sm text-muted-foreground mt-1">By Prof. Rajiv Nehru, Dr. Hiren Maniar, Dr. Ravindra Shrivastava, Dr. Dharmendra Trivedi</p>
+              </div>
+              </div>
             </div>
             <div className="flex justify-center mt-12">
               <Link
@@ -131,7 +171,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="authors" className="w-full py-12 md:py-24 lg:py-32">
+        {/* <section id="authors" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
@@ -165,9 +205,9 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg</div>-muted/50">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
               <div className="flex flex-col justify-center space-y-4">
@@ -199,13 +239,13 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-4 md:gap-8">
                   <div className="flex flex-col items-center gap-2 rounded-lg border bg-background p-4 md:p-6">
                     <BookMarked className="h-10 w-10 text-primary" />
-                    <h3 className="text-xl font-medium">50+</h3>
+                    <h3 className="text-xl font-medium">5+</h3>
                     <p className="text-sm text-center text-muted-foreground">Published Works</p>
                   </div>
                   <div className="flex flex-col items-center gap-2 rounded-lg border bg-background p-4 md:p-6">
                     <Award className="h-10 w-10 text-primary" />
                     <h3 className="text-xl font-medium">5+</h3>
-                    <p className="text-sm text-center text-muted-foreground">Literary Awards</p>
+                    <p className="text-sm text-center text-muted-foreground">Ratings</p>
                   </div>
                   <div className="flex flex-col items-center gap-2 rounded-lg border bg-background p-4 md:p-6">
                     <Users className="h-10 w-10 text-primary" />
