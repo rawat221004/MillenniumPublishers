@@ -50,7 +50,6 @@ export default function Home() {
       <main className="flex-1">
 
 
-
         
       </main>
       <footer className="w-full border-t bg-background py-6 md:py-8">
