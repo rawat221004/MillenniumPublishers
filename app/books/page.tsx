@@ -66,15 +66,15 @@ export default function Home() {
                 />
               </div>
               <div className="flex-1 space-y-3">
-                <h2 className="text-xl font-bold">The 5 AM Club – Own Your Morning. Elevate Your Life</h2>
+                <h2 className="text-xl font-bold">L&T Body Of Knowledge - Case Studies</h2>
                 <p className="text-muted-foreground">
                   by{" "}
-                  <Link href="#" className="text-primary hover:underline">
-                    Robin Sharma
-                  </Link>
+                  <div className="text-primary">
+                  Millennium Enterprises
+                  </div>
                 </p>
 
-                <div className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm inline-block">Buy On Amazon</div>
+                <a href="https://www.amazon.com/dp/B07JZHCZ9Y" target="_blank" rel="noopener noreferrer" className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm inline-block hover:bg-yellow-200 transition-colors">Buy On Amazon</a>
 
                 <p className="text-sm text-muted-foreground">
                   Introducing the Acme Prism T-Shirt, a perfect blend of style and comfort for the modern individual.
@@ -97,22 +97,19 @@ export default function Home() {
               </div>
               <div className="flex-1 space-y-3">
                 <h2 className="text-xl font-bold">
-                  Money Smart in Your 20s & 30s - Beginners' Handbook for Financial Fitness in India
+                Intelligent Forencis - Innovations and Applications
                 </h2>
                 <p className="text-muted-foreground">
                   by{" "}
-                  <Link href="#" className="text-primary hover:underline">
-                    Zebra Learn
-                  </Link>
+                  <div className="text-primary ">
+                  Dr. Nilakshi Jain & Maj. Vineet Kumar
+                  </div>
                 </p>
 
-                <div className="bg-green-100 text-green-800 px-2 py-1 rounded text-sm inline-block">Buy On Amazon</div>
+                <a href="https://www.amazon.com/dp/B07JZHCZ9Y" target="_blank" rel="noopener noreferrer" className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm inline-block hover:bg-yellow-200 transition-colors">Buy On Amazon</a>
 
                 <p className="text-sm text-muted-foreground">
-                  A comprehensive guide to managing your finances in your early adult years. This book covers investing,
-                  mutual funds, tax planning, retirement planning, insurances, stocks and more to help you achieve
-                  financial independence.
-                </p>
+                  Unveiling the Future of Forensics with Al and Machine Learning! With the rise of sophisticated cybercrimes, traditional forensic techniques are no longer sufficient. Intelligent Forensics: Innovation and Application provides a groundbreaking exploration into Al-driven forensic investigations. Whether you are a student, an investigator, or a cybersecurity expert, this book equips you with the knowledge and tools to master intelligent forensics.Inside, you'll find: Foundational principles of digital forensics and Al integration. • Real-world case studies on cybercrime investigations. Advanced forensic tools and ML. algorithms. • Ethical and legal considerations in Al-driven forensic investigations. Hands-on exercises to build practical expertise. Career pathways in the field of digital forensics. Stay ahead in the ever-evolving world of cybersecurity with this essential guide to intelligent forensics! </p>
               </div>
             </div>
 
@@ -129,16 +126,16 @@ export default function Home() {
               </div>
               <div className="flex-1 space-y-3">
                 <h2 className="text-xl font-bold">
-                  Dopamine Detox: A Short Guide to Remove Distractions and Get Your Brain to Do Hard Things
+                Project Management for Profitable Growth
                 </h2>
                 <p className="text-muted-foreground">
                   by{" "}
-                  <Link href="#" className="text-primary hover:underline">
-                    Thibaut Meurisse
-                  </Link>
+                  <div className="text-primary ">
+                  By Prof. Rajiv Nehru, Dr. Hiren Maniar, Dr. Ravindra Shrivastava, Dr. Dharmendra Trivedi
+                  </div>
                 </p>
 
-                <div className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-sm inline-block">Productivity</div>
+                <a href="https://www.amazon.com/dp/B07JZHCZ9Y" target="_blank" rel="noopener noreferrer" className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm inline-block hover:bg-yellow-200 transition-colors">Buy On Amazon</a>
 
                 <p className="text-sm text-muted-foreground">
                   Learn how to break free from distractions and addictive behaviors by understanding how dopamine
@@ -160,16 +157,16 @@ export default function Home() {
                 />
               </div>
               <div className="flex-1 space-y-3">
-                <h2 className="text-xl font-bold">The 5 AM Club – Own Your Morning. Elevate Your Life</h2>
+                <h2 className="text-xl font-bold">Proceeding of Technology Conclave -IX (2024) - Industrial Process Automation</h2>
                 <p className="text-muted-foreground">
                   by{" "}
-                  <Link href="#" className="text-primary hover:underline">
-                    Robin Sharma
-                  </Link>
+                  <div className="text-primary ">
+                  Mr.Nishad Mehta, Mr. Rajnikant Ghodasara, Mrs.Shobha Arun
+                  </div>
                 </p>
 
-                <div className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm inline-block">Buy On Amazon
-                </div>
+                <a href="https://www.amazon.com/dp/B07JZHCZ9Y" target="_blank" rel="noopener noreferrer" className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm inline-block hover:bg-yellow-200 transition-colors">Buy On Amazon</a>
+                
 
                 <p className="text-sm text-muted-foreground">
                   Introducing the Acme Prism T-Shirt, a perfect blend of style and comfort for the modern individual.
@@ -199,8 +196,8 @@ export default function Home() {
                   </Link>
                 </p>
 
-                <div className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm inline-block">Buy On Amazon
-</div>
+                <a href="https://www.amazon.com/dp/B07JZHCZ9Y" target="_blank" rel="noopener noreferrer" className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm inline-block hover:bg-yellow-200 transition-colors">Buy On Amazon</a>
+
 
                 <p className="text-sm text-muted-foreground">
                   Introducing the Acme Prism T-Shirt, a perfect blend of style and comfort for the modern individual.
