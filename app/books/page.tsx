@@ -77,9 +77,13 @@ export default function Home() {
                 <a href="https://www.amazon.com/dp/B07JZHCZ9Y" target="_blank" rel="noopener noreferrer" className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm inline-block hover:bg-yellow-200 transition-colors">Buy On Amazon</a>
 
                 <p className="text-sm text-muted-foreground">
-                  Introducing the Acme Prism T-Shirt, a perfect blend of style and comfort for the modern individual.
-                  This tee is crafted with a meticulous composition of 60% combed ringspun cotton and 40% polyester
-                  jersey, ensuring a soft and breathable fabric that feels gentle against the skin.
+                Larsen & Toubro is an Indian multinational engaged in EPC Projects, Hi-Tech Manufacturing and
+Services. It operates in over 50 countries worldwide.
+A strong, customer–focused approach and the constant quest for top-class quality have enabled
+L&T to attain and sustain leadership in its major lines of business for over eight decades.
+L&T addresses critical needs in core, high-impact sectors of the economy - Hydrocarbon,
+Infrastructure, Power, Process Industries, and Defence – and its integrated capabilities span the
+entire spectrum of design-to-deliver. 
                 </p>
               </div>
             </div>
@@ -138,9 +142,7 @@ export default function Home() {
                 <a href="https://www.amazon.com/dp/B07JZHCZ9Y" target="_blank" rel="noopener noreferrer" className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-sm inline-block hover:bg-yellow-200 transition-colors">Buy On Amazon</a>
 
                 <p className="text-sm text-muted-foreground">
-                  Learn how to break free from distractions and addictive behaviors by understanding how dopamine
-                  affects your brain. This practical guide provides strategies to increase focus, productivity and
-                  accomplish difficult tasks.
+                Larsen & Toubro is an Indian multinational engaged in EPC Projects, Hi-Tech Manufacturing and Services. It operates in over 50 countries worldwide. A strong, customer–focused approach and the constant quest for top-class quality have enabled L&T to attain and sustain leadership in its major lines of business for over eight decades. L&T addresses critical needs in core, high-impact sectors of the economy - Hydrocarbon, Infrastructure, Power, Process Industries, and Defence – and its integrated capabilities span the entire spectrum of design-to-deliver.
                 </p>
               </div>
             </div>
@@ -169,9 +171,7 @@ export default function Home() {
                 
 
                 <p className="text-sm text-muted-foreground">
-                  Introducing the Acme Prism T-Shirt, a perfect blend of style and comfort for the modern individual.
-                  This tee is crafted with a meticulous composition of 60% combed ringspun cotton and 40% polyester
-                  jersey, ensuring a soft and breathable fabric that feels gentle against the skin.
+                Industrial Process Automation presents a comprehensive collection of research papers, case studies, and innovative solutions focused on the advancements in industrial automation. This volume highlights cutting-edge technologies and methodologies that are reshaping industrial processes, enhancing efficiency, and improving productivity. It serves as a valuable resource for engineers, researchers, and industry professionals seeking insights into the latest trends in automation, AI-driven control systems, and process optimization. The conclave's proceedings reflect the collaboration between academia and industry to drive innovation in the rapidly evolving field of industrial process automation.
                 </p>
               </div>
             </div>
