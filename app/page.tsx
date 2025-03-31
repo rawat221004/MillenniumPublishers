@@ -34,35 +34,25 @@ function MobileNav() {
                   Home
                 </Link>
               </div>
-              <div className="border-l-4 border-primary-foreground/70 pl-6">
+              <div className="border-l-4 border-primary-foreground/90 pl-6">
+                <Link
+                  href="/about"
+                  className="flex items-center gap-3 text-lg font-medium transition-colors hover:text-primary-foreground/80"
+                  onClick={() => setOpen(false)}
+                >
+                  About Us
+                </Link>
+              </div>
+              <div className="border-l-4 border-primary-foreground/80 pl-6">
                 <Link
                   href="/books"
                   className="flex items-center gap-3 text-lg font-medium transition-colors hover:text-primary-foreground/80"
                   onClick={() => setOpen(false)}
                 >
-                  {/* <BookOpen className="h-5 w-5 text-primary-foreground/70" /> */}
                   Books
                 </Link>
               </div>
-              <div className="border-l-4 border-primary-foreground/60 pl-6">
-                <Link
-                  href="/subjects"
-                  className="flex items-center gap-3 text-lg font-medium transition-colors hover:text-primary-foreground/80"
-                  onClick={() => setOpen(false)}
-                >
-                  Subjects
-                </Link>
-              </div>
-              <div className="border-l-4 border-primary-foreground/50 pl-6">
-                <Link
-                  href="/publishers"
-                  className="flex items-center gap-3 text-lg font-medium transition-colors hover:text-primary-foreground/80"
-                  onClick={() => setOpen(false)}
-                >
-                  Publishers
-                </Link>
-              </div>
-              <div className="border-l-4 border-primary-foreground/40 pl-6">
+              <div className="border-l-4 border-primary-foreground/70 pl-6">
                 <Link
                   href="/proposal"
                   className="flex items-center gap-3 text-lg font-medium transition-colors hover:text-primary-foreground/80"
@@ -71,13 +61,22 @@ function MobileNav() {
                   Book Proposal
                 </Link>
               </div>
-              <div className="border-l-4 border-primary-foreground/30 pl-6">
+              <div className="border-l-4 border-primary-foreground/60 pl-6">
                 <Link
-                  href="/about"
+                  href="/publishers"
                   className="flex items-center gap-3 text-lg font-medium transition-colors hover:text-primary-foreground/80"
                   onClick={() => setOpen(false)}
                 >
-                  AboutUs
+                  Publishers
+                </Link>
+              </div>
+              <div className="border-l-4 border-primary-foreground/50 pl-6">
+                <Link
+                  href="/subjects"
+                  className="flex items-center gap-3 text-lg font-medium transition-colors hover:text-primary-foreground/80"
+                  onClick={() => setOpen(false)}
+                >
+                  Subjects
                 </Link>
               </div>
             </div>
@@ -118,20 +117,20 @@ export default function Home() {
             <Link href="#" className="text-sm font-medium transition-colors hover:text-primary">
               Home
             </Link>
+            <Link href="/about" className="text-sm font-medium transition-colors hover:text-primary">
+              About Us
+            </Link>
             <Link href="/books" className="text-sm font-medium transition-colors hover:text-primary">
               Books
-            </Link>
-            <Link href="/subjects" className="text-sm font-medium transition-colors hover:text-primary">
-              Subjects
-            </Link>
-            <Link href="/publishers" className="text-sm font-medium transition-colors hover:text-primary">
-              Publishers
             </Link>
             <Link href="/proposal" className="text-sm font-medium transition-colors hover:text-primary">
               Book Proposal
             </Link>
-            <Link href="/about" className="text-sm font-medium transition-colors hover:text-primary">
-              AboutUs
+            <Link href="/publishers" className="text-sm font-medium transition-colors hover:text-primary">
+              Publishers
+            </Link>
+            <Link href="/subjects" className="text-sm font-medium transition-colors hover:text-primary">
+              Subjects
             </Link>
           </nav>
           <div className="flex items-center gap-4">
@@ -155,8 +154,7 @@ export default function Home() {
                   Discover Literary Excellence
                 </h1>
                 <p className="mx-auto max-w-[700px] text-lg/relaxed md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-light">
-                  Curating Emerging Technologies in Computer Science that Innovate, Challenge, and Transform.
-                </p>
+                Curating emerging ideas, technologies, and innovations that challenge, transform, and redefine the future across disciplines.                </p>
               </div>
               <div className="space-x-4 animate-fade-in-up">
                 <Link
