@@ -206,7 +206,7 @@ export default function Home() {
                 </div>
                 <div className="p-4 text-center">
                   <h3 className="font-serif text-xl font-medium">L&T Body Of Knowledge - Case Studies</h3>
-                  <p className="text-sm text-muted-foreground mt-1">By Millennium Enterprises</p>
+                  <p className="text-sm text-muted-foreground mt-1">By Prof. Rajiv Nehru, Dr. Debopam Roy, Dr.Aviraj Bajpai, Dr. Dharmendra Trivedi</p>
                 </div>
               </div>
 
