@@ -166,7 +166,7 @@ const publishersData = [
   "MACMILLAN",
   "MAPLE PRESS",
   "MARCEL DEKKER",
-  "MC GRAW HILL",
+  "MCGRAW HILL",
   "MEDTECH",
   "MEHUL BOOK SALES",
   "MIT PRESS",
